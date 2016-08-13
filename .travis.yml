@@ -6,6 +6,6 @@ before_script:
   - "pip install -r requirements.txt"
   - "pip install ."
 script:
-  - nosetests
+  - bash travis-test.sh
 notifications:
   email: false
