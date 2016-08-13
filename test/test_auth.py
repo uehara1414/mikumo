@@ -27,4 +27,4 @@ class TestAuth(unittest.TestCase):
 
     def test_auth_2(self):
         conoha = mikumo.ConoHa(self.username, self.password, self.identity_service)
-        self.assertEqual(type(conoha.authinfo.jst_expires), datetime.datetime)
+        self.assertEqual(type(conoha.authinfo.expires), datetime.datetime)
